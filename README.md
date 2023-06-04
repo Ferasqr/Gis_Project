@@ -37,5 +37,5 @@ Python script.
 
 It will be done by Computing the population counts in each susceptibility class
 
-<img src="https://github.com/Sri603/GIS-Project/assets/93034515/9e0e2684-c3c9-4304-9ff6-e830783aec18" width="40%" height="30%">
+<img src="[Piechart.png](https://github.com/Sri603/GIS-Project/blob/a48d866f557ce80821d08b45b7748ff0be251129/Piechart.png)" width="40%" height="30%">
 
