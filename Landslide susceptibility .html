@@ -27,6 +27,23 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 
     <!-- =======================================================
     * Template Name: Impact
@@ -124,6 +141,46 @@
 
                             </div><!-- End meta top -->
                             <div class="content">
+                                <p>
+                                    <strong>CSV File:</strong>
+                                </p>
+
+                                <div id="csvContent"></div>
+
+                                <script>
+                                    // Function to read the CSV file and render its content
+                                    function readCSVFile(file) {
+                                        var rawFile = new XMLHttpRequest();
+                                        rawFile.open("GET", file, false);
+                                        rawFile.onreadystatechange = function () {
+                                            if (rawFile.readyState === 4 && (rawFile.status === 200 || rawFile.status === 0)) {
+                                                var allText = rawFile.responseText;
+                                                var lines = allText.split("\n");
+                                                var html = "<table>";
+                                                for (var i = 0; i < lines.length; i++) {
+                                                    html += "<tr>";
+                                                    var row = lines[i].split(",");
+                                                    for (var j = 0; j < row.length; j++) {
+                                                        if (i === 0) {
+                                                            html += "<th>" + row[j] + "</th>";
+                                                        } else {
+                                                            html += "<td>" + row[j] + "</td>";
+                                                        }
+                                                    }
+                                                    html += "</tr>";
+                                                }
+                                                html += "</table>";
+                                                document.getElementById('csvContent').innerHTML = html;
+                                            }
+                                        }
+                                        rawFile.send(null);
+                                    }
+
+                                    // Call the function with the CSV file path
+                                    readCSVFile("assets/ErrorMatrix.csv");
+                                </script>
+
+
                                 <p>
                                     Landslide susceptibility mapping is a process that involves assessing and mapping the likelihood or probability of landslides occurring in a given area.
                                 </p>
