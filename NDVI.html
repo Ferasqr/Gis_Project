@@ -115,42 +115,38 @@
                         <article class="blog-details">
 
                             <div class="post-img">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                                <img src="assets\img\NDVI.png" alt="" class="img-fluid">
                             </div>
 
-                            <h2 class="title">Aspect Exploratory data analysis</h2>
+                            <h2 class="title">Normalized Difference Vegetation Index (NDVI)</h2>
 
                             <div class="meta-top">
 
                             </div><!-- End meta top -->
                             <div class="content">
                                 <p>
-                                    "Aspect" refers to a specific terrain or topographic attribute of a geographic landscape. It represents the direction that a slope or a land surface faces, typically measured in degrees clockwise from north.
-                                </p>
-
-                                <p>
-                                    Aspect in QGIS can be calculated for a digital elevation model (DEM) or a raster dataset representing elevation values. DEMs are commonly derived from elevation data captured by satellites, airborne sensors, or ground surveys. QGIS provides various tools and functionalities to analyze and visualize aspect information.
+                                    Normalized Difference Vegetation Index means just that. It's an often-used measure of plant growth that may be derived from satellite or aerial photography. The normalized difference vegetation index (NDVI) is a metric that assesses the density and health of vegetation in a certain region.Based on how well plants reflect light in the red and near-infrared (NIR) ranges.
                                 </p>
 
                                 <blockquote>
                                     <p>
-                                        <strong>Aspect Calculation:</strong> QGIS provides tools to calculate aspect values from Digital Elevation Models (DEMs). The "Aspect" tool generates an output raster with aspect values for each pixel in the DEM. Aspect values range from 0 to 360 degrees, representing different directions (0 degrees for north, 90 degrees for east, 180 degrees for south, and 270 degrees for west).
+                                       <strong> Normalised Difference Vegetation Index = (NIR - Red) / (NIR + Red)<strong>
                                     </p>
 
                                     <p>
-                                        <strong>Aspect Visualization:</strong> QGIS allows you to visualize aspect data in various ways. You can apply color ramps or gradient styles to represent aspect values, creating visually appealing hillshade maps that highlight slope directions. By adjusting the light source, you can control shading and emphasize specific aspects.
+                                        The "NIR" in this formula stands for near-infrared reflectance, whereas the "Red" stands for red reflectance. Calculated NDVI values swing from minus one to plus one. The normalized difference vegetation index (NDVI) map, often called an NDVI image or NDVI raster, is a graphical representation of the NDVI values computed for a region or landscape.
                                     </p>
 
                                     <p>
-                                        <strong>Aspect Analysis:</strong> Aspect information is useful for different GIS analyses. For example, it can help identify slopes facing a specific direction, such as north-facing slopes, which can have implications for vegetation distribution, solar radiation exposure, or hydrological processes. Aspect can also be combined with other terrain attributes like slope or elevation to derive additional information or perform further analysis.
+                                        Distinct colors or hues reflect distinct ranges of NDVI readings, revealing shifts in plant density and health. The vegetation index values are often shown as a color gradient on an NDVI map. Green signifies dense and healthy vegetation (high NDVI values), whereas red or brown indicates sparse or stressed vegetation (low NDVI values) on a scale from green to red. 
                                     </p>
 
                                     <p>
-                                        <strong>Terrain and Landscape Analysis:</strong> Aspect is often used in combination with other terrain attributes to gain insights into the landscape. For instance, combining aspect and slope data can help identify different landforms like ridges, valleys, or flat areas. Aspect analysis is also valuable for site selection, viewshed analysis, or studying the influence of topography on various phenomena.
+                                        Agriculture, forestry, environmental monitoring, and land management are just a few uses for NDVI maps. They are useful for identifying areas of vegetative stress, such as those impacted by drought or disease, and for understanding the geographical distribution of vegetation and changes in vegetation over time.
                                     </p>
 
                                     <p>
-                                        <strong>Aspect-Based Mapping:</strong> Aspect information can be utilized to create specialized maps for specific applications. In agriculture, aspect maps can help determine suitable areas for crop cultivation based on solar exposure and temperature variation. In urban planning, aspect analysis aids in understanding shading patterns and the solar potential of different areas.
+                                        Land cover changes, plant dynamics, and the success of land management may all be evaluated via NDVI maps.The range of NDVI values shown on a map, such as the range we specified of 0.879873 to -0.230556, is representative of the whole spectrum of NDVI readings taken from the area depicted on the map. The density and condition of plants across the terrain may be inferred from this range. 
                                     </p>
                                 </blockquote>
                             </div>
