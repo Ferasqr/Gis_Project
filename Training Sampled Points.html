@@ -115,43 +115,27 @@
                         <article class="blog-details">
 
                             <div class="post-img">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                                <img src="assets\img\Training_Testing_Points.png" alt="" class="img-fluid">
                             </div>
 
-                            <h2 class="title">Aspect Exploratory data analysis</h2>
+                            <h2 class="title">Training_Testing_Points</h2>
 
                             <div class="meta-top">
 
                             </div><!-- End meta top -->
                             <div class="content">
                                 <p>
-                                    "Aspect" refers to a specific terrain or topographic attribute of a geographic landscape. It represents the direction that a slope or a land surface faces, typically measured in degrees clockwise from north.
-                                </p>
-
-                                <p>
-                                    Aspect in QGIS can be calculated for a digital elevation model (DEM) or a raster dataset representing elevation values. DEMs are commonly derived from elevation data captured by satellites, airborne sensors, or ground surveys. QGIS provides various tools and functionalities to analyze and visualize aspect information.
+                                    In the context of landslide susceptibility mapping, training sampled points and testing sampled points are used in the process of developing and evaluating landslide susceptibility models. Here's what they mean
                                 </p>
 
                                 <blockquote>
                                     <p>
-                                        <strong>Aspect Calculation:</strong> QGIS provides tools to calculate aspect values from Digital Elevation Models (DEMs). The "Aspect" tool generates an output raster with aspect values for each pixel in the DEM. Aspect values range from 0 to 360 degrees, representing different directions (0 degrees for north, 90 degrees for east, 180 degrees for south, and 270 degrees for west).
+                                        <strong>Training Sampled Points:</strong> Training sampled points refer to the locations or points on the ground where landslides have occurred or have been observed. These points are selected based on historical records, field surveys, or other sources of landslide data. The purpose of training sampled points is to provide data for model training. These points establish the relationship between landslide occurrences and various influencing factors or variables, such as slope, soil type, geology, land cover, rainfall, etc. The training sampled points are typically assigned a binary label indicating whether a landslide event has occurred at that location (e.g., landslide = 1, non-landslide = 0). These labeled points are then used to train the landslide susceptibility model.
                                     </p>
 
                                     <p>
-                                        <strong>Aspect Visualization:</strong> QGIS allows you to visualize aspect data in various ways. You can apply color ramps or gradient styles to represent aspect values, creating visually appealing hillshade maps that highlight slope directions. By adjusting the light source, you can control shading and emphasize specific aspects.
-                                    </p>
-
-                                    <p>
-                                        <strong>Aspect Analysis:</strong> Aspect information is useful for different GIS analyses. For example, it can help identify slopes facing a specific direction, such as north-facing slopes, which can have implications for vegetation distribution, solar radiation exposure, or hydrological processes. Aspect can also be combined with other terrain attributes like slope or elevation to derive additional information or perform further analysis.
-                                    </p>
-
-                                    <p>
-                                        <strong>Terrain and Landscape Analysis:</strong> Aspect is often used in combination with other terrain attributes to gain insights into the landscape. For instance, combining aspect and slope data can help identify different landforms like ridges, valleys, or flat areas. Aspect analysis is also valuable for site selection, viewshed analysis, or studying the influence of topography on various phenomena.
-                                    </p>
-
-                                    <p>
-                                        <strong>Aspect-Based Mapping:</strong> Aspect information can be utilized to create specialized maps for specific applications. In agriculture, aspect maps can help determine suitable areas for crop cultivation based on solar exposure and temperature variation. In urban planning, aspect analysis aids in understanding shading patterns and the solar potential of different areas.
-                                    </p>
+                                        <strong>Testing Sampled Points:</strong> Testing sampled points refer to separate points or locations distinct from the training sampled points. These points are also associated with the same variables used in the training phase. The purpose of testing sampled points is to evaluate the performance and accuracy of the trained landslide susceptibility model. These points assess how well the model can predict the likelihood of landslides in areas where landslide events have not been observed or documented. The testing sampled points validate the model by comparing the predicted susceptibility values with the actual occurrence or absence of landslides at these locations. This evaluation helps assess the reliability and effectiveness of the model in predicting landslide susceptibility. By utilizing both training and testing sampled points, landslide susceptibility mapping aims to develop models that can effectively identify areas with a higher probability of experiencing landslides. The training sampled points are used to establish the relationships between landslide occurrences and the influencing factors. In contrast, the testing sampled points provide an independent dataset to assess the model's predictive performance. This process helps generate reliable landslide susceptibility maps that can assist in risk assessment and management.
+                                    </p>                                
                                 </blockquote>
                             </div>
                             <!-- End post content -->
