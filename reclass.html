@@ -115,42 +115,42 @@
                         <article class="blog-details">
 
                             <div class="post-img">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                                <img src="assets\img\Landslide Susceptibility Map_Reclass.png" alt="" class="img-fluid">
                             </div>
 
-                            <h2 class="title">Aspect Exploratory data analysis</h2>
+                            <h2 class="title">Landslide Susceptibility Reclass Exploratory data analysis</h2>
 
                             <div class="meta-top">
 
                             </div><!-- End meta top -->
                             <div class="content">
                                 <p>
-                                    "Aspect" refers to a specific terrain or topographic attribute of a geographic landscape. It represents the direction that a slope or a land surface faces, typically measured in degrees clockwise from north.
-                                </p>
-
-                                <p>
-                                    Aspect in QGIS can be calculated for a digital elevation model (DEM) or a raster dataset representing elevation values. DEMs are commonly derived from elevation data captured by satellites, airborne sensors, or ground surveys. QGIS provides various tools and functionalities to analyze and visualize aspect information.
+                                    In the context of landslide susceptibility mapping, "reclass" refers to reclassifying or reassigning the values or categories of a susceptibility map to create a simplified or more interpretable representation of the results.After developing a landslide susceptibility map, which typically assigns different levels or degrees of susceptibility to different areas, the reclassification step involves grouping or consolidating these susceptibility levels into a smaller number of classes or categories. This simplification aids in the visualization and communication of the results, making them more easily understandable for decision-makers and stakeholders.
                                 </p>
 
                                 <blockquote>
                                     <p>
-                                        <strong>Aspect Calculation:</strong> QGIS provides tools to calculate aspect values from Digital Elevation Models (DEMs). The "Aspect" tool generates an output raster with aspect values for each pixel in the DEM. Aspect values range from 0 to 360 degrees, representing different directions (0 degrees for north, 90 degrees for east, 180 degrees for south, and 270 degrees for west).
+                                        The reclassification process typically involves the following steps:
+                                   </p>
+
+                                    <p>
+                                        <strong>Defining Categories: </strong> Determine the desired number and range of categories or classes that will be used to represent the different levels of landslide susceptibility. For example, you may have three categories: low, moderate, and high susceptibility.
                                     </p>
 
                                     <p>
-                                        <strong>Aspect Visualization:</strong> QGIS allows you to visualize aspect data in various ways. You can apply color ramps or gradient styles to represent aspect values, creating visually appealing hillshade maps that highlight slope directions. By adjusting the light source, you can control shading and emphasize specific aspects.
+                                        <strong>Setting Thresholds:</strong>  Establish thresholds or cutoff values for each category based on the original susceptibility values. These thresholds serve as criteria for assigning areas to specific categories. 
                                     </p>
 
                                     <p>
-                                        <strong>Aspect Analysis:</strong> Aspect information is useful for different GIS analyses. For example, it can help identify slopes facing a specific direction, such as north-facing slopes, which can have implications for vegetation distribution, solar radiation exposure, or hydrological processes. Aspect can also be combined with other terrain attributes like slope or elevation to derive additional information or perform further analysis.
+                                        <strong>Reclassification:</strong>  Assign each cell or polygon in the susceptibility map to a new category based on its susceptibility value and the defined thresholds. This involves comparing the susceptibility value of each location with the defined thresholds and assigning it to the appropriate category.
                                     </p>
 
                                     <p>
-                                        <strong>Terrain and Landscape Analysis:</strong> Aspect is often used in combination with other terrain attributes to gain insights into the landscape. For instance, combining aspect and slope data can help identify different landforms like ridges, valleys, or flat areas. Aspect analysis is also valuable for site selection, viewshed analysis, or studying the influence of topography on various phenomena.
+                                        <strong>Updating Legend and Visualization:</strong>  Modify the legend or color scheme of the susceptibility map to reflect the new categories or classes. This may involve assigning distinct colors or symbols to each category and updating the map's legend accordingly.
                                     </p>
 
                                     <p>
-                                        <strong>Aspect-Based Mapping:</strong> Aspect information can be utilized to create specialized maps for specific applications. In agriculture, aspect maps can help determine suitable areas for crop cultivation based on solar exposure and temperature variation. In urban planning, aspect analysis aids in understanding shading patterns and the solar potential of different areas.
+                                         The reclassification step helps simplify the interpretation of landslide susceptibility maps by presenting the results more easily. Instead of dealing with a continuous range of susceptibility values, stakeholders can focus on a smaller set of categories representing distinct landslide susceptibility levels. This facilitates decision-making processes related to land use planning, hazard mitigation, and emergency response.
                                     </p>
                                 </blockquote>
                             </div>
