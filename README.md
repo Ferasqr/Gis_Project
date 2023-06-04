@@ -28,7 +28,7 @@ Python script.
   
   
   
-<img src="[https://github.com/Sri603/GIS-Project/assets/93034515/e7acfcf3-a752-4786-a4cc-9a636131e571](https://github.com/Sri603/GIS-Project/blob/a48d866f557ce80821d08b45b7748ff0be251129/Piechart.png)" width="40%" height="30%">
+<img src="[https://github.com/Sri603/GIS-Project/assets/93034515/e7acfcf3-a752-4786-a4cc-9a636131e571]" width="40%" height="30%">
 
    ###### *Error matrix from the validation*
 
